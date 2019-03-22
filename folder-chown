@@ -1,0 +1,6 @@
+#!/bin/bash
+
+chown -R www-data:www-data ./muscl.ua
+
+find ./muscl.ua -type d -exec chmod 755 {} \;
+find ./muscl.ua -type f -exec chmod 664 {} \;
